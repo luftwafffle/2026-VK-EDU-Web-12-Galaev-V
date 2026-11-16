@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="icon" href="static/img/favicon.ico">
+    <title>Quoi ? - Главная страница</title>
+</head>
+<body>
+    <header>
+        <a id="logo-link" href="index.html">
+        <h1 id="logo">Quoi ?</h1>
+        </a>
+        <div class="search">
+            <input type="search" placeholder="найдётся всё!">
+            <button>поиск</button>
+        </div>
+        <div class="header-ask-and-user">
+            <div class="ask-button">
+                <a href="ask.html"><button>Спросить</button></a>
+            </div>
+            <div class="header-user-info">
+                <img class="header-user-pfp" src="static/img/pfp.jpg" alt="users pfp">
+                <div class="header-user-actions" >
+                    <span>Igor Babochkin</span>
+                    <div>
+                        <a href="settings.html">Settings</a>
+                        <a href="login.html">Log out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        <div class="main-header">
+            <span id="questions-header">New Questions</span>
+            <span id="hot-questions-link"><a href="">Hot questions</a> </span>
+        </div>
+        <div class="central-area">
+            <div class="questions">
+                <div class="question">
+                    <div class="question-info">
+                        <div class="question-user-info">
+                            <img class="question-user-pfp" src="static/img/pfp.jpg" alt="users pfp">
+                            <span class="question-username">Птолемей Веточкин</span>
+                        </div>
+                        <div class="question-date-and-rating">
+                            <span class="question-datetime">27 августа 2025, 16:32</span>
+
+                            <div class="question-rating btn-group btn-group-sm">
+                                <button class="theme-danger btn-subtle " >-</button>
+                                <button class="btn-solid theme-secondary disabled ">12</button>
+                                <button class="theme-success btn-subtle " >+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2><a href="question.html" >Если удалить System32, компьютер станет быстрее?</a></h2>
+                    <p>Услышал от друга, что папка System32 занимает место и тормозит систему. Хочу удалить — компьютер ведь станет быстрее? Если да, то как это сделать правильно, а то пишет «Отказано в доступе». Помогите, а то боюсь сломать.</p>
+                    
+                    <div class="question-footer">
+                        <div class="question-answers">
+                            <span><a href="question.html">3 ответа</a></span>
+                        </div>
+                        <div class="question-tags">
+                            <span class="question-tag"><a class="question-tag-link" href="">грузинская кухня</a></span>
+                            <span class="question-tag"><a class="question-tag-link" href="">python</a></span>
+                            <span class="question-tag"><a class="question-tag-link" href="">SQL</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-info">
+                        <div class="question-user-info">
+                            <img class="question-user-pfp" src="static/img/pfp.jpg" alt="users pfp">
+                            <span class="question-username">Серёжа :)</span>
+                        </div>
+                        <div class="question-date-and-rating">
+                            <span class="question-datetime">7 июня 2026, 17:17</span>
+
+                            <div class="question-rating btn-group btn-group-sm">
+                                <button class="theme-danger btn-subtle " >-</button>
+                                <button class="btn-solid theme-secondary disabled ">-5</button>
+                                <button class="theme-success btn-subtle " >+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2><a href="" >Кот скинул мой ноутбук со стола. Это считается code review?</a></h2>
+                    <p>Писал код, кот запрыгнул на стол и скинул ноутбук. Теперь экран треснул, а код я не сохранил. Вопрос: это можно считать строгим code review от кота? И кто вообще прав — я или он?</p>
+                    
+                    <div class="question-footer">
+                        <div class="question-answers">
+                            <span><a href="question.html">2 ответа</a></span>
+                        </div>
+                        <div class="question-tags">
+                            <span class="question-tag"><a class="question-tag-link" href="">котики</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <div class="question-info">
+                        <div class="question-user-info">
+                            <img class="question-user-pfp" src="static/img/pfp.jpg" alt="users pfp">
+                            <span class="question-username">YetAnotherMember</span>
+                        </div>
+                        <div class="question-date-and-rating">
+                            <span class="question-datetime">23 сентября 2026, 12:45</span>
+
+                            <div class="question-rating btn-group btn-group-sm">
+                                <button class="theme-danger btn-subtle " >-</button>
+                                <button class="btn-solid theme-secondary disabled ">110</button>
+                                <button class="theme-success btn-subtle " >+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2><a href="" >Если я скачаю больше оперативной памяти, я стану умнее?</a></h2>
+                    <p>Услышал, что чем больше оперативки — тем быстрее работает компьютер. Логично же: если мозг — это тоже «память», то докуплю ещё 16 ГБ и поумнею. Подскажите, где скачать и куда вставлять?</p>
+                    
+                    <div class="question-footer">
+                        <div class="question-answers">
+                            <span><a href="question.html">1 ответ</a></span>
+                        </div>
+                        <div class="question-tags">
+                            <span class="question-tag"><a class="question-tag-link" href="">компьютеры</a></span>
+                            <span class="question-tag"><a class="question-tag-link" href="">windows</a></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    </ul>
+                  </nav>
+            </div>
+            <div class="sidebar">
+                <div class="tags">
+                    <div class="sidebar-header">Popular tags</div>
+                    <span class="tag"><a href="">грузинская кухня</a></span>
+                    <span class="tag"><a href="">python</a></span>
+                    <span class="tag"><a href="">SQL</a></span>
+                    <span class="tag"><a href="">котики</a></span>
+                    <span class="tag"><a href="">java</a></span>
+                    <span class="tag"><a href="">perl</a></span>
+
+                </div>
+                <div class="members">
+                    <div class="sidebar-header">Best members</div>
+                    <div class="member"><a href="">Sultan Laguchev</a></div>
+                    <div class="member"><a href="">Queen Victoria</a></div>
+                    <div class="member"><a href="">Rhododendrhone</a></div>
+                    <div class="member"><a href="">Bob</a></div>
+                    <div class="member"><a href="">YetAnotherMember</a></div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
