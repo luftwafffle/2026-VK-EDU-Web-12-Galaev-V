@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="icon" href="static/img/favicon.ico">
+    <title>Quoi ? - Новый вопрос</title>
+</head>
+<body>
+    <header>
+        <a id="logo-link"href="index.html">
+        <h1 id="logo">Quoi ?</h1>
+        </a>
+        <div class="search">
+            <input type="search" placeholder="найдётся всё!">
+            <button>поиск</button>
+        </div>
+        <div class="header-ask-and-user">
+            
+            <div class="header-user-info">
+                <img class="header-user-pfp" src="static/img/pfp.jpg" alt="users pfp">
+                <div class="header-user-actions" >
+                    <span>Igor Babochkin</span>
+                    <div>
+                        <a href="settings.html">Settings</a>
+                        <a href="login.html">Log out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr>
+
+    <main>
+        <div class="main-header">
+            <span id="questions-header">New Question</span>
+        </div>
+        <div class="central-area">
+            <div class="new-question-area">
+                <div class="settings-row">
+                    <label for="login-input">Title</label>
+                    <input id="login-textarea" type="text" placeholder="Введите заголовок вопроса">
+                </div>
+                
+                <div class="settings-row">
+                    <label for="login-input">Text</label>
+                    <textarea id="login-input" type="text" placeholder="Введите текст вопроса"></textarea>
+                </div>
+
+                <div class="settings-row">
+                    <label for="login-input">Tags</label>
+                    <input id="login-input" type="text" placeholder="Введите теги вопроса">
+                </div>
+
+                <div class="settings-row">
+                    <div class="label-spacer"></div>
+                    <div class="ask-button">
+                        <a href="ask.html"><button>Спросить</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="tags">
+                    <div class="sidebar-header">Popular tags</div>
+                    <div class="sidebar-tags">
+                        <span class="tag"><a href="">грузинская кухня</a></span>
+                        <span class="tag"><a href="">python</a></span>
+                        <span class="tag"><a href="">SQL</a></span>
+                        <span class="tag"><a href="">котики</a></span>
+                        <span class="tag"><a href="">java</a></span>
+                        <span class="tag"><a href="">perl</a></span>
+                    </div>
+                </div>
+                <div class="members">
+                    <div class="sidebar-header">Best members</div>
+                    <div class="member"><a href="">Sultan Laguchev</a></div>
+                    <div class="member"><a href="">Queen Victoria</a></div>
+                    <div class="member"><a href="">Rhododendrhone</a></div>
+                    <div class="member"><a href="">Bob</a></div>
+                    <div class="member"><a href="">YetAnotherMember</a></div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

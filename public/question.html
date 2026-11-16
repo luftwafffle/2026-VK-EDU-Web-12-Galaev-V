@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="icon" href="static/img/favicon.ico">
+    <title>Quoi ? - Вопрос Птолемея Веточкина</title>
+</head>
+<body>
+    <header>
+        <a id="logo-link" href="index.html">
+        <h1 id="logo">Quoi ?</h1>
+        </a>
+        <div class="search">
+            <input type="search" placeholder="найдётся всё!">
+            <button>поиск</button>
+        </div>
+        <div class="header-ask-and-user">
+            <div class="ask-button">
+                <a href="ask.html"><button>Спросить</button></a>
+            </div>
+            <div class="header-user-info">
+                <img class="header-user-pfp" src="static/img/pfp.jpg" alt="users pfp">
+                <div class="header-user-actions" >
+                    <span>Igor Babochkin</span>
+                    <div>
+                        <a href="settings.html">Settings</a>
+                        <a href="login.html">Log out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr>
+    
+    <main>
+        <div class="central-area">
+            <div class="questions">
+                <div class="question">
+                    <div class="question-info">
+                        <div class="question-user-info">
+                            <img class="question-user-pfp" src="static/img/pfp.jpg" alt="users pfp">
+                            <span class="question-username">Птолемей Веточкин</span>
+                        </div>
+                        <div class="question-date-and-rating">
+                            <span class="question-datetime">27 августа 2025, 16:32</span>
+
+                            <div class="question-rating btn-group btn-group-sm">
+                                <button class="theme-danger btn-subtle " >-</button>
+                                <button class="btn-solid theme-secondary disabled ">12</button>
+                                <button class="theme-success btn-subtle " >+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2><a href="" >Если удалить System32, компьютер станет быстрее?</a></h2>
+                    <p>Всем привет! У меня старенький ноутбук, и он стал подтормаживать. Друг-программист (ну, он учится на первом курсе) сказал, что у меня «забита память» и что папка System32 — это вообще лишнее, там лежат какие-то старые файлы. Говорит: «Удали её — и комп полетит».
+
+                        Я зашёл в C:\Windows, нашёл папку, нажал «Удалить» — а мне пишет «Отказано в доступе» и требует права администратора. Я уже и через Shift+Delete пробовал, и переименовать хотел — не даёт.
+                        
+                        Вопросы:
+                        
+                        Это реально поможет ускорить компьютер?
+                        Как обойти «Отказано в доступе»? Может, через безопасный режим?
+                        Если что-то пойдёт не так — как откатить? Точка восстановления есть, но она старая.
+                        P.S. Если это важно — у меня Windows 10, 4 ГБ оперативки, и я не очень разбираюсь. Заранее спасибо!</p>
+                    
+                    <div class="question-footer">
+                        <div class="question-answers">
+                            <span><a href="">3 ответа</a></span>
+                        </div>
+                        <div class="question-tags">
+                            <span class="question-tag"><a class="question-tag-link" href="">грузинская кухня</a></span>
+                            <span class="question-tag"><a class="question-tag-link" href="">python</a></span>
+                            <span class="question-tag"><a class="question-tag-link" href="">SQL</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="answers-header"><h2>Ответы</h2></div>
+                <div class="answers">
+                    <div class="question" id="best-answer">
+                        <div class="question-info">
+                            <div class="question-user-info">
+                                <img class="question-user-pfp" src="static/img/pfp.jpg" alt="users pfp">
+                                <span class="question-username">АЦЦЦКИЙ_КОТЕЛОК_777</span>
+                            </div>
+                            <div class="question-date-and-rating">
+                                <span class="question-datetime">30 августа 2025, 19:02</span>
+
+                                <div class="question-rating btn-group btn-group-sm">
+                                    <button class="theme-danger btn-subtle " >-</button>
+                                    <button class="btn-solid theme-secondary disabled ">29</button>
+                                    <button class="theme-success btn-subtle " >+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p> Боюсь система не станет быстрее - она станет отсутствовать :)</p>
+                        <div class="answer-footer">
+                            <div class="form-field">
+                                <input type="checkbox" id="check" class="check" checked />
+                                <label for="checksuccess">Correct!</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-info">
+                            <div class="question-user-info">
+                                <img class="question-user-pfp" src="static/img/pfp.jpg" alt="users pfp">
+                                <span class="question-username">Смешарик</span>
+                            </div>
+                            <div class="question-date-and-rating">
+                                <span class="question-datetime">28 августа 2025, 4:39</span>
+
+                                <div class="question-rating btn-group btn-group-sm">
+                                    <button class="theme-danger btn-subtle " >-</button>
+                                    <button class="btn-solid theme-secondary disabled ">-2</button>
+                                    <button class="theme-success btn-subtle " >+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p> Конечно станет, ты видел сколько она весит! попробуй удалить под правами администратора</p>
+                        <div class="answer-footer">
+                            <div class="form-field">
+                                <input type="checkbox" id="check" class="check" />
+                                <label for="checksuccess">Correct!</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question" >
+                        <div class="question-info">
+                            <div class="question-user-info">
+                                <img class="question-user-pfp" src="static/img/pfp.jpg" alt="users pfp">
+                                <span class="question-username">Валерий Карпухин</span>
+                            </div>
+                            <div class="question-date-and-rating">
+                                <span class="question-datetime">27 августа 2025, 16:35</span>
+
+                                <div class="question-rating btn-group btn-group-sm">
+                                    <button class="theme-danger btn-subtle " >-</button>
+                                    <button class="btn-solid theme-secondary disabled ">9875</button>
+                                    <button class="theme-success btn-subtle " >+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p> щас попробую</p>
+                        <div class="answer-footer">
+                            <div class="form-field">
+                                <input type="checkbox" id="check" class="check" />
+                                <label for="checksuccess">Correct!</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="users-answer">
+                    <div id="answers-header"><h2>Ваш ответ:</h2></div>
+                    <textarea class="user-answer-textarea" placeholder="расскажите всё что знаете"></textarea>
+                    <div class="answer-button">
+                        <a><button>Ответить</button></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sidebar">
+                <div class="tags">
+                    <div class="sidebar-header">Popular tags</div>
+                    <span class="tag"><a href="">грузинская кухня</a></span>
+                    <span class="tag"><a href="">python</a></span>
+                    <span class="tag"><a href="">SQL</a></span>
+                    <span class="tag"><a href="">котики</a></span>
+                    <span class="tag"><a href="">java</a></span>
+                    <span class="tag"><a href="">perl</a></span>
+
+                </div>
+                <div class="members">
+                    <div class="sidebar-header">Best members</div>
+                    <div class="member"><a href="">Sultan Laguchev</a></div>
+                    <div class="member"><a href="">Queen Victoria</a></div>
+                    <div class="member"><a href="">Rhododendrhone</a></div>
+                    <div class="member"><a href="">Bob</a></div>
+                    <div class="member"><a href="">YetAnotherMember</a></div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
