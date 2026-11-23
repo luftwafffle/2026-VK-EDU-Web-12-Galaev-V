@@ -1,0 +1,48 @@
+{% extends "questions/layout/base.html" %}
+{% load static %}
+
+
+
+{% block questions-header %}
+
+        <div class="main-header">
+            <span id="questions-header">Settings: Igor Babochkin</span>
+        </div>
+
+{% endblock questions-header %}
+
+{% block content %}
+
+            <div class="new-question-area">
+                <div class="settings-row">
+                    <label for="login-input">Login</label>
+                    <input id="login-input" type="text" value="cool_monkey_228">
+                </div>
+                
+                <div class="settings-row">
+                    <label for="email-input">Email</label>
+                    <input id="email-input" type="email" value="krutayapochta@mail.ru">
+                </div>
+                
+                <div class="settings-row">
+                    <label for="nick-input">NickName</label>
+                    <input id="nick-input" type="text" value="Igor Babochkin">
+                </div>
+            
+                <div class="settings-row">
+                    <label for="avatar-input">Upload avatar</label>
+                    <div class="avatar-column">
+                        <img src="{% static 'questions/img/pfp.jpg' %}" alt="avatar" width="100" height="100">
+                        <input type="file" id="avatar-input" name="avatar" accept="image/*">
+                    </div>
+                </div>
+            
+                <div class="settings-row">
+                    <div class="label-spacer"></div>
+                    <div class="ask-button">
+                        <button type="submit">Сохранить</button>
+                    </div>
+                </div>
+            </div>
+
+{% endblock content %}

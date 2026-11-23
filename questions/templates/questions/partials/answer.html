@@ -1,0 +1,28 @@
+{% load static %}
+
+
+<div class="question">
+    <div class="question-info">
+        <div class="question-user-info">
+            <img class="question-user-pfp" src="{% static 'questions/img/pfp.jpg' %}" alt="users pfp">
+            <span class="question-username">АЦЦЦКИЙ_КОТЕЛОК_777</span>
+        </div>
+        <div class="question-date-and-rating">
+            <span class="question-datetime">30 августа 2025, 19:02</span>
+
+            <div class="question-rating btn-group btn-group-sm">
+                <button class="theme-danger btn-subtle " >-</button>
+                <button class="btn-solid theme-secondary disabled ">29</button>
+                <button class="theme-success btn-subtle " >+</button>
+            </div>
+        </div>
+    </div>
+
+    <p> {{ answer.text }}</p>
+    <div class="answer-footer">
+        <div class="form-field">
+            <input type="checkbox" id="check" class="check" />
+            <label for="checksuccess">Correct!</label>
+        </div>
+    </div>
+</div>

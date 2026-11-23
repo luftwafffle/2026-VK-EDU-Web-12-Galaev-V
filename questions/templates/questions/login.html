@@ -1,0 +1,41 @@
+{% extends "questions/layout/base.html" %}
+
+    {% block questions-header %}
+        <div class="main-header">
+            <span id="questions-header">Log in</span>
+        </div>
+    {% endblock questions-header %}
+
+    {% block content %}
+
+            <div class="new-question-area">
+                <div class="settings-row">
+                    <div class="label-spacer"></div>
+                    <div class="wrong-password">Неверный пароль! Это точно вы?</div>
+                </div>
+                <div class="settings-row">
+                    <label for="login-input">Login</label>
+                    <input id="login-input" type="text" value="cool_monkey_228">
+                </div>
+                
+                <div class="settings-row">
+                    <label for="pass-input">Password</label>
+                    <input id="pass-input" type="password">
+                </div>
+                
+                <div class="settings-row">
+                    <div class="label-spacer"></div>
+                    <div class="ask-button">
+                        <button type="submit">Войти</button>
+                    </div>
+                </div>
+
+                <div class="settings-row">
+                    <div class="label-spacer"></div>
+                    <a href="{% url "register" %}">Нет аккаунта? Сейчас сделаем!</a>
+                </div>
+
+
+            </div>
+
+        {% endblock content %}

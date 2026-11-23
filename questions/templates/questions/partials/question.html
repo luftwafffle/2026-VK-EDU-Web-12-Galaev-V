@@ -1,0 +1,36 @@
+{% load static %}
+
+<div class="question">
+    <div class="question-info">
+        <div class="question-user-info">
+            <img class="question-user-pfp" src="{% static 'questions/img/pfp.jpg' %}" alt="users pfp">
+            <span class="question-username">Птолемей Веточкин</span>
+        </div>
+        <div class="question-date-and-rating">
+            <span class="question-datetime">27 августа 2025, 16:32</span>
+
+            <div class="question-rating btn-group btn-group-sm">
+                <button class="theme-danger btn-subtle " >-</button>
+                <button class="btn-solid theme-secondary disabled ">12</button>
+                <button class="theme-success btn-subtle " >+</button>
+            </div>
+        </div>
+    </div>
+
+    <h2><a href="{% url "question_details" question.id %}" >{{ question.title }}</a></h2>
+    <p> {{ question.text }}</p>
+    
+    <div class="question-footer">
+        <div class="question-answers">
+            <span><a href="{% url "question_details" question.id %}">14 ответов</a></span>
+        </div>
+        <div class="question-tags">
+
+            {% for tag in question.tags %}
+
+            <span class="question-tag"><a class="question-tag-link" href="{% url 'tag' tag.slug %}">{{ tag.name }}</a></span>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
