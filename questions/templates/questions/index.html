@@ -1,0 +1,23 @@
+
+{% extends 'questions/layout/base.html' %}
+{% load static %}
+
+{% block questions-header %}
+<div class="main-header">
+    <span id="questions-header">New Questions</span>
+    <span id="hot-questions-link"><a href="{% url 'hot' %}">Hot questions</a> </span>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="questions">
+    {% for question in questions %}
+
+        {% include 'questions/partials/question.html'%}
+
+    {% endfor %}
+    
+    {% include 'questions/partials/pagination.html' %}
+</div>
+{% endblock %}
+

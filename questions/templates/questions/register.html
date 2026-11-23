@@ -1,0 +1,65 @@
+{% extends "questions/layout/base.html" %}
+
+
+
+
+
+    {% block questions-header %}
+        <div class="main-header">
+            <span id="questions-header">Регистрация</span>
+        </div>
+    {% endblock questions-header %}
+        
+    {% block content %}
+    
+            <div class="new-question-area">
+                <div class="settings-row">
+                    <div class="label-spacer"></div>
+                    <div class="wrong-password">Увы, пароли не совпадают :(</div>
+                </div>
+                <div class="settings-row">
+                    <label for="login-input">Login</label>
+                    <input id="login-input" type="text" value="cool_monkey_228">
+                </div>
+                
+                <div class="settings-row">
+                    <label for="login-input">Email</label>
+                    <input id="login-input" type="email" value="krutayapochta@mail.ru">
+                </div>
+
+                <div class="settings-row">
+                    <label for="login-input">NickName</label>
+                    <input id="login-input" type="text" value="Igor Babochkin">
+                </div>
+
+                <div class="settings-row">
+                    <label for="pass-input">Password</label>
+                    <input id="pass-input" type="password">
+                </div>
+
+                <div class="settings-row">
+                    <label for="pass-input">Repeat password</label>
+                    <input id="pass-input" type="password">
+                </div>
+                
+                <div class="settings-row">
+                    <label for="avatar-input">Upload avatar</label>
+                    <div class="avatar-column">
+                        <input type="file" id="avatar-input" name="avatar" accept="image/*">
+                    </div>
+                </div>
+
+                <div class="settings-row">
+                    <div class="label-spacer"></div>
+                    <div class="ask-button">
+                        <button type="submit">Зарегистрироваться</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href=" {% static 'questions/css/index.css' %}">
+    <link rel="icon" href="{% static 'questions/img/favicon.ico' %}">
+    <title>Quoi ? - Главная страница</title>
+</head>
+<body>
+    <header>
+        <a id="logo-link" href="/">
+        <h1 id="logo">Quoi ?</h1>
+        </a>
+        <div class="search">
+            <input type="search" placeholder="найдётся всё!">
+            <button>поиск</button>
+        </div>
+        {% if user.is_authenticated %}
+        <div class="header-ask-and-user">
+            <div class="ask-button">
+                <a href="{% url "ask" %}"><button>Спросить</button></a>
+            </div>
+            
+            <div class="header-user-info">
+                <img class="header-user-pfp" src="{% static 'questions/img/pfp.jpg' %}" alt="users pfp">
+                <div class="header-user-actions" >
+                    <span>Igor Babochkin</span>
+                    <div>
+                        <a href="{% url "settings" %}">Settings</a>
+                        <a href="{% url "login" %}">Log out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="header-ask-and-user">
+            
+            <div class="header-user-info">
+                <div class="header-user-actions" >
+                    <div>
+                        <a href="{% url "register" %}">Sign up</a>
+                        <a href="{% url "login" %}">Log in</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </header>
+    <hr>
+    
+    <main>
+        {% block questions-header %}
+        {% endblock%}
+        <div class="central-area">
+            {% block content %}
+            {% endblock %}
+            <div class="sidebar">
+                <div class="tags">
+                    <div class="sidebar-header">Popular tags</div>
+                    <span class="tag"><a href="{% url 'tag' 'GruzinskayaKuhnya' %}">Грузинская кухня</a></span>
+                    <span class="tag"><a href="{% url 'tag' 'python' %}">python</a></span>
+                    <span class="tag"><a href="{% url 'tag' 'sql' %}">SQL</a></span>
+                    <span class="tag"><a href="{% url 'tag' 'kotiki' %}">котики</a></span>
+                    <span class="tag"><a href="{% url 'tag' 'java' %}">java</a></span>
+                    <span class="tag"><a href="{% url 'tag' 'perl' %}">perl</a></span>
+
+                </div>
+                <div class="members">
+                    <div class="sidebar-header">Best members</div>
+                    <div class="member"><a href="">Sultan Laguchev</a></div>
+                    <div class="member"><a href="">Queen Victoria</a></div>
+                    <div class="member"><a href="">Rhododendrhone</a></div>
+                    <div class="member"><a href="">Bob</a></div>
+                    <div class="member"><a href="">YetAnotherMember</a></div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--  -->
+
+
+        
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

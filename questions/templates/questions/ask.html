@@ -1,0 +1,41 @@
+{% extends "questions/layout/base.html" %}
+
+
+{% block questions-header %}
+
+        <div class="main-header">
+            <span id="questions-header">New Question</span>
+        </div>
+
+{% endblock questions-header %}
+
+{% block content %}
+
+            <div class="new-question-area">
+                <div class="settings-row">
+                    <label for="login-input">Title</label>
+                    <input id="login-textarea" type="text" placeholder="Введите заголовок вопроса">
+                </div>
+                
+                <div class="settings-row">
+                    <label for="login-input">Text</label>
+                    <textarea id="login-input" type="text" placeholder="Введите текст вопроса"></textarea>
+                </div>
+
+                <div class="settings-row">
+                    <label for="login-input">Tags</label>
+                    <input id="login-input" type="text" placeholder="Введите теги вопроса">
+                </div>
+
+                <div class="settings-row">
+                    <div class="label-spacer"></div>
+                    <div class="ask-button">
+                        <a href="#"><button>Спросить</button></a>
+                    </div>
+                </div>
+            </div>
+
+{% endblock content %}
+
+
+            

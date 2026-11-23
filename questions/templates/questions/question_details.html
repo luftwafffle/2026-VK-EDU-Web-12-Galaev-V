@@ -1,0 +1,35 @@
+{% extends 'questions/layout/base.html' %}
+{% load static %}
+
+{% block questions-header %}
+{% endblock%}
+
+
+{% block content %}
+            <div class="questions">
+
+                {% include "questions/partials/question.html" %}
+
+                <div id="answers-header"><h2>Ответы</h2></div>
+                <div class="answers">
+
+                    {% for answer in answers %}
+                    
+                    {% include "questions/partials/answer.html" %}
+                    
+                    {% endfor %}
+
+                    
+                </div>
+
+                <div class="users-answer">
+                    <div id="answers-header"><h2>Ваш ответ:</h2></div>
+                    <textarea class="user-answer-textarea" placeholder="расскажите всё что знаете"></textarea>
+                    <div class="answer-button">
+                        <a><button>Ответить</button></a>
+                    </div>
+                </div>
+
+            </div>
+            
+{% endblock content %}
